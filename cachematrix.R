@@ -1,7 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## Create Matrix object that stores inverse
 
 makeCacheMatrix <- function(neo = matrix()) {
     # store cached inverse matrix
