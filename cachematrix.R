@@ -33,19 +33,19 @@ cacheSolve <- function(x, ...) {
     ## set the inverse
     inv <- x$getinv()
 
-    ## If we already know the inverse, we're done here
+    ## If we already know the inverse, we're done here 
     if (!is.null(inv)) {
         message("getting cached data")
         return(inv)
     }
 
-    ## figure out inverse
+    ## figure out inverse 
     data <- x$get()
     inv <- solve(data, ...)
 
-    ## Cache inverse
+    ## Cache inverse 
     x$setinv(inv)
     
-    ## remember the last thing done is what is returned
+    ## remember the last thing done is what is returned 
     inv
 }
